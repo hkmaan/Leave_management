@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C6080808"
+        />
+    <ImageView
+        android:id="@+id/manager"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:src="@drawable/hr"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+         android:onClick="manager_image" />
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="HR LOGIN"
+        android:textSize="40dp"
+        android:textColor="#0DE9A7"
+        android:textStyle="italic"
+        android:layout_below="@+id/manager"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"/>
+    <ImageView
+        android:id="@+id/employee"
+        android:layout_width="200dp"
+        android:layout_height="180dp"
+        android:src="@drawable/workersteam"
+        android:layout_above="@+id/emptxt"
+        android:layout_centerHorizontal="true"
+        android:onClick="employee_image"/>
+    <TextView
+        android:id="@+id/emptxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="EMPLOYEE LOGIN"
+        android:textSize="37dp"
+        android:textColor="#0DE9A7"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="80dp"
+        android:layout_centerHorizontal="true"
+        android:textStyle="italic"/>
+</RelativeLayout>

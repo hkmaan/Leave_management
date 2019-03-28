@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.harpreet.leave_management">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Hr_profile_page"></activity>
+        <activity android:name=".Listcell" />
+        <activity android:name=".Home_hr" />
+        <activity android:name=".Employee_login" />
+        <activity android:name=".hr_login3" />
+        <activity android:name=".Verfication" />
+        <activity android:name=".Resetpassword" />
+        <activity android:name=".layout2" />
+        <activity android:name=".Splash">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

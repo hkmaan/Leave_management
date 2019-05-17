@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Approved_listcell"
+    android:id="@+id/approved_view">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#D00E0D0D"
+        android:layout_margin="5dp"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pic2"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:src="@drawable/image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#0DE9A7"/>
+        <TextView
+            android:id="@+id/name_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Employee Name"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textColor="#0DE9A7"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/pic2"
+            android:layout_marginTop="25dp"
+            />
+
+        <TextView
+            android:id="@+id/emp_degination2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_txt2"
+            android:layout_toRightOf="@id/pic2"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="marketing"
+            android:textColor="#0DE9A7"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/leave_txt2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="sick leave"
+            android:textColor="#0DE9A7"
+            android:textSize="15dp"
+            android:layout_below="@+id/emp_degination2"
+            android:layout_toRightOf="@id/pic2"
+            android:fontFamily="sans-serif-smallcaps"/>
+       <TextView
+           android:id="@+id/a1"
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Approved"
+           android:textColor="#0DE9A7"
+           android:textSize="20dp"
+           android:fontFamily="sans-serif-smallcaps"
+           android:layout_alignParentRight="true"
+           android:layout_centerVertical="true"
+           android:layout_margin="15dp"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Leave_policy">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/settting"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C6080808"
+        android:layout_margin="20dp"/>
+    <ImageView
+        android:id="@+id/back"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:padding="10dp"
+        android:onClick="about_back"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="30dp"/>
+        <TextView
+            android:id="@+id/policy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Leave Policy"
+            android:textColor="#0DE9A7"
+            android:fontFamily="sans-serif-smallcaps"
+            android:textSize="40dp"
+            android:layout_below="@+id/back"
+            android:layout_centerHorizontal="true"
+            />
+    <ScrollView
+        android:layout_below="@id/policy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="25dp"
+                android:text="Employees, across all industries in India, are entitled to a certain number of leaves per year aside from the holidays and days off. The number and type of leave depends on the industry, employer and state you are in under the Factories Act and State’s shop and establishment act."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="35dp"
+                android:text="General Overview of Leaves"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="25dp"
+                android:text="Commencement of Leave Period is calendar year i.e. 1st January to 31st December every year.  All regular employees are entitled to around 27 days leave in a year. Holiday List is provided at the beginning of the calendar year."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="30dp"
+                android:text="Sick Leave"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="25dp"
+                android:text="Minimum 7 days casual leave and 14 days sick leave is provided to employees.
+Employee need to apply for each leave and take approval except in cases where approval could not be taken in advance usually for sick leaves. Grant of leave shall depend upon the policies of the workplace and is at the discretion of the manager/management. There is no set rule for which leave to be approved and not approved.  Employer can refuse the leave application, if not satisfied with the reason of leave. It depends from reason to reason, manager to manager."/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:textColor="#0DE9A7"
+                android:text="Casual Leave"
+                android:textStyle="bold"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Casual Leave (CL) are granted for certain unforeseen situation or were you are requiring to go for one- or two-days leaves to attend to personal matters and not for vacation. In case of casual leave normally company’s strict maximum to 3 days in a month. In such cases the person has to take the permission in advance."
+                android:textColor="#0DE9A7"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="30dp"
+                android:text="Other Leave"
+                android:textStyle="bold"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#0DE9A7"
+                android:textSize="25dp"
+                android:text="•	Apart from these, there are others paid, unpaid or half-paid leaves like Study Leave, Bereavement Leave."/>
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

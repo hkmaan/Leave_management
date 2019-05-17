@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".My_team">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/staff"
+        android:scaleType="centerCrop"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:background="#0E0D0D"></View>
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@drawable/back"
+        android:padding="5dp"
+        android:onClick="back"
+        ></ImageView>
+    <TextView
+        android:id="@+id/my_team"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="My Team"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#0DE9A7"
+        android:textSize="35dp"
+        android:textAlignment="center"
+       />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recycler_team"
+        android:layout_below="@+id/my_team"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="45dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_alignParentBottom="true"
+        android:background="@drawable/green_view"
+        android:text="Add Employee"
+        android:textColor="#000"
+        android:textSize="20dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="60dp"
+        android:fontFamily="sans-serif-smallcaps"
+        android:onClick="Add_Employee"
+        />
+    <ProgressBar
+        android:id="@+id/progressbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+       android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        />
+
+</RelativeLayout>

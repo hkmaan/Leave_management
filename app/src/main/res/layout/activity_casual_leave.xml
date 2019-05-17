@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Casual_leave">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/casual_leave"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0E0D0D"></View>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@drawable/back"
+        android:padding="5dp"
+        android:onClick="cback"
+        ></ImageView>
+
+
+
+    <TextView
+        android:id="@+id/casual_leave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Casual Leave"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#0DE9A7"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        />
+<View
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/casual_leave"
+    android:background="#AD080808"
+    ></View>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/casual_leave">
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Subject: Casual leave application"
+        android:textSize="20dp"
+        android:textColor="#0DE9A7"/>
+    <TextView
+        android:id="@+id/Mr"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Respected Mr./Mrs.,"
+        android:layout_below="@+id/subject"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/text0"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am writing this application to request for seven days leave. The reason for my week-long leave is that I have to attend a telecommunication conference "
+        android:layout_below="@+id/Mr"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"/>
+
+
+    <TextView
+        android:id="@+id/from1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="from {start date} "
+        android:layout_below="@+id/text0"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"/>
+    <TextView
+        android:id="@+id/to2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="to {end date}."
+        android:layout_below="@+id/text0"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_toRightOf="@id/from1"/>
+    <TextView
+        android:id="@+id/text1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="This is an essential conference as I would encounter many new and advanced technologies that we could use to update our telecom system. I will be very interested in attending this conference to learn about the revolutionary aspects of the telecommunication industry. With the conference, there will likely be a two-day workshop in which I will learn and observe the things practically. "
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/to2"/>
+    <TextView
+        android:id="@+id/text3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="As this conference is in "
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@id/text1"/>
+    <TextView
+        android:id="@+id/text4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@id/text1"
+        android:text="place name"
+        android:layout_toRightOf="@id/text3"/>
+    <TextView
+        android:id="@+id/text5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I will have to leave early to be in time at the airport. "
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/text4"
+        />
+    <TextView
+        android:id="@+id/text6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="20dp"
+        android:textColor="#0DE9A7"
+        android:text="I will be grateful to you for considering my leave application. "
+        android:layout_below="@+id/text5"/>
+    <TextView
+        android:id="@+id/text7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Sincerely,  "
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/text6"
+        />
+    <TextView
+        android:id="@+id/text8"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Your Name"
+        android:textSize="20dp"
+        android:textColor="#0DE9A7"
+        android:layout_below="@+id/text7"
+        /></RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Requested_leave">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/requested_leave"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="55dp"
+        android:background="#0E0D0D"></View>
+    <ImageView
+        android:layout_width="45dp"
+        android:layout_height="50dp"
+        android:src="@drawable/back"
+        android:padding="5dp"
+        android:onClick="req_back"
+        ></ImageView>
+    <TextView
+        android:id="@+id/req_txt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Requested Leave"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#0DE9A7"
+        android:textSize="40dp"
+        android:textAlignment="center"
+        />
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/requested_recycler"
+        android:layout_below="@+id/req_txt"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="45dp">
+
+    </android.support.v7.widget.RecyclerView>
+    <ProgressBar
+        android:id="@+id/progressbar1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="20dp"
+        />
+</RelativeLayout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Sick_leave">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/casual_leave"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#0E0D0D"></View>
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="45dp"
+        android:src="@drawable/back"
+        android:padding="5dp"
+        android:onClick="sback"
+        ></ImageView>
+
+    <TextView
+        android:id="@+id/Sick_leave"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Sick Leave"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textColor="#0DE9A7"
+        android:textSize="35dp"
+        android:textAlignment="center"
+        />
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/Sick_leave"
+        android:background="#AD080808"
+        ></View>
+    <TextView
+        android:id="@+id/subject3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/Sick_leave"
+        android:text="Subject: Sick leave application"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/Mr3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/subject3"
+        android:text="Respected Mr./Mrs. ,"
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/stxt"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="I am writing to notify you that I need sick leave from work because of a severe viral infection. I caught the infection yesterday evening and since then have been feeling very weak."
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/Mr3"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/stxt1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="As per the doctor, I need to take medication for some days, along with proper rest for at least a week to recover from the illness."
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/stxt"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/stxt2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text=" Kindly allow me a week-long leave for some days. "
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/stxt1"
+        android:layout_margin="5dp"/>
+
+    <TextView
+        android:id="@+id/stxt3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Please feel free to contact me at your convenience, should you have any questions or require clarification concerning the ongoing project. Thank you for your quick attention to this matter. "
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@+id/stxt2"
+        android:layout_margin="5dp"/>
+    <TextView
+        android:id="@+id/stxt4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@id/stxt3"
+        android:text="Sincerely, "
+        android:layout_margin="5dp"
+        />
+    <TextView
+        android:id="@+id/stxt5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#0DE9A7"
+        android:textSize="20dp"
+        android:layout_below="@id/stxt4"
+        android:text="name "
+        android:layout_margin="5dp"
+        />
+
+</RelativeLayout>

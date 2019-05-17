@@ -1,3 +1,14 @@
 <resources>
     <string name="app_name">Leave_management</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string-array name="Types_of_Leaves">
+        <item>--select type of leave--</item>
+        <item>Sick Leave</item>
+        <item>Paid Leave</item>
+        <item>Casual Leave</item>
+        <item>Other Leave</item>
+    </string-array>
 </resources>

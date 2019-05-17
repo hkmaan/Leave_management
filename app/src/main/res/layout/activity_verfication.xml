@@ -23,12 +23,13 @@
     android:textSize="30dp"
     android:textColor="#0DE9A7"
     android:layout_centerHorizontal="true"
+    android:fontFamily="sans-serif-smallcaps"
     android:layout_marginTop="50dp"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="We sent a verification Email.
-Open it and tap to change password link to continue"
+        android:text="We sent a verification Email.Open it and tap to change password link to continue"
+        android:fontFamily="sans-serif-smallcaps"
         android:textColor="#0DE9A7"
         android:textSize="30dp"
         android:layout_below="@+id/text"

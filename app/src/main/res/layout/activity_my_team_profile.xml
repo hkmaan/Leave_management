@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Employee_profile">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/login"
+        android:scaleType="centerCrop"/>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C6080808"
+        />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:background="#F30E0D0D"
+        android:id="@+id/layer1"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:src="@drawable/back"
+                android:padding="10dp"
+                android:onClick="emppro_back"/>
+
+        </RelativeLayout>
+    </LinearLayout>
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/circle_image"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        app:civ_border_width="2dp"
+        app:civ_border_color="#0DE9A7"
+        android:src="@drawable/image"
+        android:layout_below="@+id/layer1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="-70dp"
+        android:onClick="change_photo"/>
+
+    <EditText
+        android:id="@+id/emp_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Employee Name"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="30dp"
+        android:textColor="#0DE9A7"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:layout_below="@id/circle_image"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="15dp"
+        android:enabled="false"/>
+    <EditText
+        android:id="@+id/designation"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Designation"
+        android:fontFamily="sans-serif-smallcaps"
+        android:textSize="30dp"
+        android:maxLines="1"
+        android:imeOptions="actionNext"
+        android:textColor="#0DE9A7"
+        android:layout_below="@id/emp_name"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"/>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/designation">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+
+
+            >
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/emp_id"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Employee ID"
+                    android:text=""
+                    android:enabled="false"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/gender"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Gender"
+                    android:text=""
+                    android:enabled="false"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Dob"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="D.O.B"
+                    android:text=""
+                    android:maxLines="1"
+                    android:enabled="false"
+                    android:inputType="date"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/Phoneno"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Phone No."
+                    android:maxLines="1"
+                    android:text=""
+                    android:inputType="phone"
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/address"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Address"
+                    android:maxLines="1"
+                    android:inputType="text"
+                    android:text=""
+                    android:enabled="false"
+                    android:imeOptions="actionNext"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/empemail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="E-mail"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:maxLines="1"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:enabled="false"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+            <android.support.design.widget.TextInputLayout
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:errorEnabled="true"
+                android:textColorHint="#0DE9A7">
+
+                <android.support.design.widget.TextInputEditText
+                    android:id="@+id/blood_grp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="Blood Group"
+                    android:layout_marginLeft="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text=""
+                    android:maxLines="1"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:inputType="text"
+                    android:imeOptions="actionDone"
+                    android:enabled="false"
+                    android:textColor="#ffffff"/>
+            </android.support.design.widget.TextInputLayout>
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

@@ -25,23 +25,13 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent">
         <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/camera"
-            android:layout_alignParentRight="true"
-            android:layout_alignParentBottom="true"
-            android:layout_marginRight="10dp"
-            android:layout_marginBottom="10dp"
-            android:onClick="add_cover_photo"
-            />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Add Cover Photo"
-            android:textColor="#0DE9A7"
-            android:layout_centerInParent="true"
-            android:fontFamily="sans-serif-smallcaps"
-            android:textSize="20dp"/>
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/back"
+            android:padding="10dp"
+            android:onClick="hr_back"/>
+
+
     </RelativeLayout>
 </LinearLayout>
     <de.hdodenhof.circleimageview.CircleImageView
@@ -50,20 +40,13 @@
         android:layout_height="150dp"
         app:civ_border_width="2dp"
         app:civ_border_color="#0DE9A7"
-        android:src="@drawable/hrdefaultpic"
+        android:src="@drawable/image"
         android:layout_below="@+id/layer1"
+
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="-70dp"/>
-    <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:src="@drawable/camera"
-        android:layout_below="@+id/layer1"
-        android:layout_alignParentRight="true"
-        android:layout_marginRight="130dp"
-        android:layout_marginTop="40dp"
-        android:onClick="change_photo"
-        />
+        android:layout_marginTop="-70dp"
+        android:onClick="onPickImage"/>
+
     <EditText
         android:id="@+id/hr_name"
         android:layout_width="wrap_content"
@@ -76,216 +59,178 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="15dp"
         android:enabled="false"/>
+<ScrollView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/hr_name">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_below="@id/hr_name"
-        android:layout_marginTop="15dp"
+
+
         >
-
-        <LinearLayout
-            android:id="@+id/rel1"
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/gender"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="horizontal"
-            android:background="@drawable/green_view"
-            >
+            app:errorEnabled="true"
+            android:textColorHint="#0DE9A7">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Gender "
-                android:padding="5dp"
-                android:textColor="#000"
-                android:textSize="25dp"
-
-                />
-            <EditText
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText1"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="Female"
-                android:padding="5dp"
-                android:background="@drawable/whitebutton"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textSize="25dp"
-               android:layout_marginLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:hint="Gender"
+               android:text=""
                 android:enabled="false"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/rel2"
+
+                android:maxLines="1"
+                android:inputType="text"
+                android:imeOptions="actionNext"
+              android:layout_marginLeft="20dp"
+              android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Phoneno"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            android:background="@drawable/green_view"
-            >
+            app:errorEnabled="true"
+            android:textColorHint="#0DE9A7">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="  DOB    "
-                android:padding="5dp"
-                android:textColor="#000"
-                android:textSize="25dp"
-
-                />
-            <EditText
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText3"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="12/09/80"
-                android:padding="5dp"
-                android:background="@drawable/whitebutton"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textSize="25dp"
-                android:layout_marginLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:hint="Phone No."
+                android:maxLines="1"
+
+                android:text=""
+               android:inputType="phone"
                 android:enabled="false"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/rel3"
+                android:imeOptions="actionNext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/address"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:layout_marginTop="15dp"
-            android:orientation="horizontal"
-            android:background="@drawable/green_view"
-            >
+            app:errorEnabled="true"
+            android:textColorHint="#0DE9A7">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Contact"
-                android:padding="5dp"
-                android:textColor="#000"
-                android:textSize="25dp"
-
-                />
-            <EditText
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText4"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="+91781549801"
-                android:padding="5dp"
-                android:background="@drawable/whitebutton"
-                android:fontFamily="sans-serif-smallcaps"
-                android:textSize="25dp"
-                android:layout_marginLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:hint="Address"
+                android:maxLines="1"
+                android:inputType="text"
+                android:text=""
                 android:enabled="false"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/rel4"
+                android:imeOptions="actionNext"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/Dob"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/green_view"
-            >
+            app:errorEnabled="true"
+            android:textColorHint="#0DE9A7">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="  Email  "
-                android:padding="5dp"
-                android:textColor="#000"
-                android:textSize="25dp"
-
-                />
-            <EditText
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText2"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="harpreet@gmail.com"
-                android:padding="5dp"
-                android:background="@drawable/whitebutton"
-                android:textSize="20dp"
-                android:layout_marginLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#000"
+                android:layout_height="wrap_content"
+                android:hint="D.O.B"
+                android:text=""
+                android:maxLines="1"
                 android:enabled="false"
-                />
-        </LinearLayout>
-        <LinearLayout
-            android:id="@+id/rel5"
+                android:inputType="date"
+                android:imeOptions="actionDone"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+        <android.support.design.widget.TextInputLayout
+            android:id="@+id/email"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginStart="20dp"
-            android:layout_marginEnd="20dp"
-            android:orientation="horizontal"
-            android:layout_marginTop="15dp"
-            android:background="@drawable/green_view"
-            >
+            app:errorEnabled="true"
+            android:textColorHint="#0DE9A7">
 
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="20dp"
-                android:fontFamily="sans-serif-smallcaps"
-                android:text="Address"
-                android:padding="5dp"
-                android:textColor="#000"
-                android:textSize="25dp"
-
-                />
-            <EditText
+            <android.support.design.widget.TextInputEditText
+                android:id="@+id/editText5"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:text="harpreet@gmail.com"
-                android:padding="5dp"
-                android:background="@drawable/whitebutton"
-                android:textSize="20dp"
-                android:layout_marginLeft="10dp"
-                android:textAlignment="center"
-                android:textColor="#000"
-                android:enabled="false"
-                />
-        </LinearLayout>
+                android:layout_height="wrap_content"
+                android:hint="E-mail"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+               android:text=""
+                android:maxLines="1"
+                android:inputType="textEmailAddress"
+                android:imeOptions="actionDone"
+              android:enabled="false"
+                android:textColor="#ffffff"/>
+        </android.support.design.widget.TextInputLayout>
+        <Button
+            android:id="@+id/button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/stroke_green"
+            android:text="Change Password"
+            android:textColor="#0DE9A7"
+            android:textSize="20dp"
+            android:onClick="change_password"
+            android:visibility="invisible"
+
+           />
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-        <TextView
-            android:id="@+id/tedit"
-            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="sans-serif-smallcaps"
-            android:text="Edit Profile"
-            android:textSize="20dp"
-            android:textStyle="bold"
-            android:textColor="#0DE9A7"
-            android:layout_centerHorizontal="true"
-            android:onClick="edit_profile"
-            android:layout_centerVertical="true"
-            />
+            android:layout_marginTop="15dp"
+            >
+            <TextView
+                android:id="@+id/edit_details"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Edit Text"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:layout_centerHorizontal="true"
+                android:fontFamily="sans-serif-smallcaps"
+                android:textColor="#0DE9A7"
+                android:onClick="edit_details"
+                />
             <ImageView
-                android:layout_width="25dp"
-                android:layout_height="25dp"
+                android:id="@+id/edit_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
                 android:src="@drawable/edit"
-                android:layout_centerVertical="true"
-                android:layout_toRightOf="@+id/tedit"/>
+                android:layout_toRightOf="@+id/edit_details"/>
+            <Button
+                android:id="@+id/save_changes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/green_view"
+                android:textColor="#ffff"
+                android:text="Save Details"
+                android:visibility="invisible"
+                android:onClick="save_details"
+                android:fontFamily="sans-serif-smallcaps"
+                />
         </RelativeLayout>
+
     </LinearLayout>
 
-
+</ScrollView>
 </RelativeLayout>

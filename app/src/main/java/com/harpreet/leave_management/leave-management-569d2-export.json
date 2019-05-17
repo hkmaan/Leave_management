@@ -1,0 +1,50 @@
+{
+  "employees" : {
+    "abcd@gmailcom" : {
+      "designation" : "fhjkndj",
+      "email" : "abcd@gmail.com",
+      "emp_id" : "abcd123",
+      "emp_name" : "abcd",
+      "password" : "12345678"
+    },
+    "pb@gmailcom" : {
+      "designation" : "hrujd",
+      "email" : "pb@gmail.com",
+      "emp_id" : "Pb123",
+      "emp_name" : "Pb",
+      "password" : "12345678"
+    },
+    "pragati@gmailcom" : {
+      "designation" : "Marketing",
+      "email" : "pragati@gmail.com",
+      "emp_id" : "pragati101",
+      "emp_name" : "Pragati",
+      "password" : "12345678"
+    },
+    "priya@gmailcom" : {
+      "designation" : "wryuuio",
+      "email" : "priya@gmail.com",
+      "emp_id" : "Priya 101",
+      "emp_name" : "priya",
+      "password" : "12345678"
+    }
+  },
+  "holiday_list" : {
+    "January" : {
+      "1": {
+      "holiday" : "New Year's Eve",
+      "image" : "url",
+      "name" : "Tuesday"
+}
+    },
+
+  },
+  "hr_profile" : {
+    "Address" : "Amritsar",
+    "DOB" : "12/8/65",
+    "email" : "harpreet@gmail.com",
+    "gender" : "female",
+    "hr_name" : "Harpreet Kaur",
+    "phone_no" : "+916548628628"
+  }
+}
